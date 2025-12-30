@@ -1,81 +1,106 @@
-# React + Vite
+## Relific
 
-# Krisiyukta Website
+Relific is an integrated data and analytics platform built for organisations operating in the social-impact and CSR ecosystem. It enables NGOs, CSR teams, foundations, and implementation partners to collect, unify, analyse, and report programme data at scale—without fragmented tools, spreadsheets, or manual reconciliation.
 
-Krisiyukta's official website for showcasing products, solutions, and services for empowering farmers through technology.
+Relific is designed for real-world programme execution, where data is collected in the field, processed across multiple sectors, and reported against statutory, donor, and impact frameworks such as MCA CSR-2, SDGs, and IRIS+.
 
-## 🚀 Features
+At its core, Relific helps organisations move from data collection → insight → compliance → decision-making in a single, connected system.
 
-- **Farmer Platform**: Access best farming practices, connect with experts, and get market insights.
-- **TracSeed**: SaaS product for seed companies and seed organizers.
-- **Impact Stories**: Real-life farmer success stories.
-- **Contact Form**: Reach out to Krisiyukta for inquiries.
-- **Newsletter**: Stay updated with the latest agricultural insights.
+What Relific Solves
+-------------------
 
-## 📂 Project Structure
+Social and CSR programmes often struggle with:
 
-```
-KY_website_2025/
-│-- src/
-│   ├── components/
-│   ├── constants/
-│   ├── assets/
-│   ├── App.js
-│   ├── index.js
-│-- public/
-│-- README.md
-│-- package.json
-│-- .gitignore
-```
+- Fragmented data across teams, partners, and geographies
+- Inconsistent formats from field collection tools
+- Manual MIS and compliance reporting
+- Limited visibility into outcomes, utilisation, and performance
+- High dependency on spreadsheets and external consultants
 
-## 🛠️ Installation
+Relific addresses these challenges by providing purpose-built tools that work together as one platform.
 
-### 1️⃣ Clone the Repository
+Relific Product Suite
+---------------------
 
-```sh
-git clone https://github.com/vignesh209933/Krisiyukta_website_2025.git
-cd Krisiyukta_website_2025
-```
+Relific is composed of three tightly integrated products:
 
-### 2️⃣ Install Dependencies
+1. Surve-R — Field Data Collection
 
-```sh
+   Surve-R is a configurable, sector-aware data collection tool used for baseline studies, monitoring, evaluations, and audits.
+
+   Key capabilities:
+   - Custom form creation for agriculture, education, health, livelihoods, climate, and CSR programmes
+   - Mobile-first data capture (online and offline)
+   - Geo-tagging, media uploads, and structured validations
+   - Project-linked forms to ensure data continuity across programme phases
+
+2. Drive-R — Data Integration & Analytics
+
+   Drive-R is Relific’s data unification and analytics layer. It brings together data from Surve-R, external databases, spreadsheets, and partner systems into a single analytical environment.
+
+   Key capabilities:
+   - Automated data ingestion and transformation (ETL)
+   - Clean, denormalised datasets for analysis
+   - SQL-based querying with AI-assisted workflows
+   - Interactive dashboards for MIS, programme performance, and management reporting
+
+3. ProGran — Programme & Grant Management
+
+   ProGran is the operational backbone for managing projects, grants, and financial tracking.
+
+   Key capabilities:
+   - Project and partner master data
+   - Budget allocation and utilisation tracking
+   - Fund disbursement records
+   - Outcome, output, and impact mapping
+   - Role-based dashboards for programme, finance, and leadership teams
+
+Getting started
+---------------
+
+1. Install dependencies
+
+```bash
 npm install
 ```
 
-### 3️⃣ Start the Development Server
+2. Run the development server
 
-```sh
-npm start
+```bash
+npm run dev
 ```
 
-The website will be available at `http://localhost:3000`
+The app runs at http://localhost:3000 by default.
 
-## 🚀 Deployment
+Scripts
+-------
 
-To deploy the project, use:
+- `npm run dev` — start Next.js dev server
+- `npm run build` — build production bundle
+- `npm run start` — run production server
+- `npm run lint` — run linter
 
-```sh
-npm run build
-```
+Environment
+-----------
 
-## 📌 Git Workflow
+This project expects standard Next.js environment variables when integrating external services (for example, Strapi). See `.env.example` for starting hints.
 
-1. **Create a new branch**: `git checkout -b feature-branch`
-2. **Make changes and commit**:
-   ```sh
-   git add .
-   git commit -m "Added new feature"
-   ```
-3. **Push changes**: `git push origin feature-branch`
-4. **Create a Pull Request (PR)** on GitHub.
+Deployment
+----------
 
-## 🤝 Contribution Guidelines
+This project is configured for Vercel/Next.js deployments. Build with `npm run build` and deploy using your preferred provider (Vercel recommended for Next.js apps).
 
-- Follow best practices for React and JavaScript.
-- Keep commit messages meaningful.
-- Ensure responsiveness and accessibility.
+Contributing
+------------
 
-## 📞 Contact
+Please open issues or pull requests for bugs and improvements. Follow feature-branch workflow and include meaningful commit messages.
 
-For any queries, reach out to Krisiyukta at [website link] or email us at [contact email].
+License
+-------
+
+This repository includes a `LICENSE` file. Check it for licensing details.
+
+Contact
+-------
+
+For questions, reach out to the project owner.
